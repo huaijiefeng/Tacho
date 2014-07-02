@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Tacho" parent="android:Theme">
+    </style>
+
+    <style name="Widget"></style>
+
+    <style name="Widget.TachoView" parent="Widget">
+        <item name="android:background">@drawable/dashboard</item>
+    </style>
+</resources>

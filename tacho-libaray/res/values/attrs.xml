@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Tacho">
+        <attr name="tachoViewStyle" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="TachoView">
+        <attr name="x_offset" format="integer"></attr>
+        <attr name="y_offset" format="integer"></attr>
+        <attr name="pointer" format="reference"></attr>
+        <attr name="bg" format="reference"></attr>
+    </declare-styleable>
+</resources>
