@@ -6,12 +6,14 @@ import android.content.res.TypedArray;
 import android.graphics.*;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.widget.ImageView;
 
 /**
  * Created by fenghb on 14-7-1.
  */
 public class TachoView extends ImageView {
+    private static final String TAG = "TachoView";
     private float mTotalChangeDegree;
     private float mLastSpeed;
     private float mCurrentSpeed;
@@ -69,6 +71,7 @@ public class TachoView extends ImageView {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.TachoView, defStyle, 0);
 
         mXOffset = typedArray.getInteger(R.styleable.TachoView_x_offset, defaultXOffset);
+        Log.d(TAG, String.valueOf(mXOffset));
         mYOffset = typedArray.getInteger(R.styleable.TachoView_y_offset, defaultYOffset);
         mPointer = BitmapFactory.decodeResource(resources, R.drawable.dashboard_pointer);
         mDashboard = BitmapFactory.decodeResource(resources, R.drawable.dashboard);
